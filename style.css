@@ -1,4 +1,102 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: "Open Sans";
+}
+
+body{
+    background-image: url(imagens/BG_Funsales.jpg);
+}
+
+:root{
+    --primary-color: #59006f;
+    --secondary-color: gray;
+    --tertiary-color: rgb(242, 251, 51);
+    --fourthy-color: #3b147d;
+    --fifth-color:#095569;
+}
+
+section{
+    width: 100%;
+    min-height: 80vh;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 60px;
+    color: white;
+}
+
+p{
+    size: 20px;
+    color: white;
+}
+
+.letreiro{
+    margin-bottom: 20px;
+}
+
+.grifado{
+    color: var(--tertiary-color);
+}
+
+.container{
+    background-image:linear-gradient(to top, var(--fifth-color), var(--fourthy-color));
+    height: auto;
+    width: 550px;
+    border-radius: 20px;
+    
+}
+
+.container-items, .list-items{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+}
+
+.list-items{
+    background-color: #172042;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+input, button{
+    border-radius: 20px;
+    width: 200px;
+    height: 20px;
+    border-style: none;
+    padding: 10px;
+    outline: none;
+}
+
+button{
+    height: 40px;
+    font-weight: bold;
+    background-color: var(--tertiary-color);
+}
+
+button:hover{
+    cursor: pointer;
+    background-color:rgb(223, 231, 63) ;
+}
+
+li{
+    color: white;
+}
+
+svg {
+  height: 95px;
+  width: 100%;
+  display: block;
+}
+
+.SVGfooter{
+    transform: rotate(180deg);
+    display: block;
 }
