@@ -1,3 +1,11 @@
+:root{
+    --primary-color: #59006f;
+    --secondary-color: gray;
+    --tertiary-color: rgb(242, 251, 51);
+    --fourthy-color: #3b147d;
+    --fifth-color:#095569;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -8,13 +16,6 @@ body{
     background-image: url(imagens/BG_Funsales.jpg);
 }
 
-:root{
-    --primary-color: #59006f;
-    --secondary-color: gray;
-    --tertiary-color: rgb(242, 251, 51);
-    --fourthy-color: #3b147d;
-    --fifth-color:#095569;
-}
 
 section{
     width: 100%;
@@ -33,38 +34,10 @@ h1{
 }
 
 p{
-    size: 20px;
+    font-size: 20px;
     color: white;
 }
 
-.letreiro{
-    margin-bottom: 20px;
-}
-
-.grifado{
-    color: var(--tertiary-color);
-}
-
-.container{
-    background-image:linear-gradient(to top, var(--fifth-color), var(--fourthy-color));
-    height: auto;
-    width: 550px;
-    border-radius: 20px;
-    
-}
-
-.container-items, .list-items{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 20px;
-}
-
-.list-items{
-    background-color: #172042;
-    border-radius: 20px;
-    padding: 20px;
-}
 
 input, button{
     border-radius: 20px;
@@ -88,15 +61,99 @@ button:hover{
 
 li{
     color: white;
+    list-style: none;
+}
+
+span{
+    color: red;
+    font-weight: bold;
+}
+
+span:hover{
+    cursor: pointer;
 }
 
 svg {
-  height: 95px;
-  width: 100%;
-  display: block;
+    height: 95px;
+    width: 100%;
+    display: block;
 }
 
+.letreiro{
+    margin-bottom: 20px;
+}
+
+.grifado{
+    color: var(--tertiary-color);
+}
+
+.container{
+    background-image:linear-gradient(to top, var(--fifth-color), var(--fourthy-color));
+    height: auto;
+    width: 550px;
+    border-radius: 20px;
+    
+}
+
+.container-items, .list-items{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+    font-size: 20px;
+}
+
+.list-items{
+    background-color: #172042;
+    border-radius: 20px;
+    padding: 20px;
+}
 .SVGfooter{
     transform: rotate(180deg);
     display: block;
+}
+
+@media (max-width: 768px) {
+    h1{
+        font-size: 36px;
+    }
+    
+    input, button{
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .container{
+        width: 90%;
+        padding: 10px;
+    }
+
+    .container-items{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .list-items{
+        font-size: 18px;
+        flex-direction: column;
+    }
+    
+}
+
+@media (max-width: 480px) {
+    h1{
+        font-size: 28px;
+    }
+
+    p{
+        font-size: 16px;
+    }
+
+    svg{
+        height: 60px;
+    }
+
+    .container{
+        width: 95%;
+    }
 }

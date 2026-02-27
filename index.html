@@ -3,7 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Afazeres</title>
+        <link rel="icon" href="imagens/favicon.ico">
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,23 +28,19 @@
 
 <section>
 
-    <div class="letreiro">
+    <div class="letreiro" id="msgGrifada">
         <h1>Lista de Afazeres</h1>
-        <p>Sugestão:
-            <p class="grifado">"msg"</p>
-        </p>
+        <p>Sugestão:</p>
     </div>
 
     <div class="container">
         <div class="container-items">
-            <input type="text" placeholder="Insira um item">
-            <button>Adicionar</button>
+            <input type="text" id="input-box" placeholder="Insira um item">
+            <button onclick="addTask()">Adicionar</button>
         </div>
-        <div class="list-items">
-            <ul>
-                <li>item1</li>
-                <li>item2</li>
-                <li>item3</li>
+        <div class="list-items">  
+            <ul id="list-container">
+
             </ul>
         </div>
     </div>
